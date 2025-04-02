@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+        header{
+            background-color: cornflowerblue;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px;
+        }
+        figure{
+            font-size: 20px;
+        }
+        nav{
+            background-color: cornflowerblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 15px;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+        a:hover{
+            color: lightblue;
+        }
+
+        section{
+            background-color: rgb(127, 167, 241);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        img{
+            border: 10px double;
+        }
+
+        footer{
+            background-color: cornflowerblue;
+            color:aliceblue;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Auxílio nos Estudos</h1>
+        <figure>
+        <img src="imagens/gato.png" width="90px">
+        <figcaption>Prof. Ni (programação)</figcaption>
+        </figure>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="musicas.html">Músicas para Estudos</a>
+        <a href="sites-videos.html">Sites e Vídeos para Estudos</a>
+        <a href="organizacao.html">Organização</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+        <h1>
+            Contato
+        </h1>
+
+        <h1>Cadastre-se</h1>
+    Digite seu nome: <input type="text" required autofocus placeholder="Digite seu nome completo"> 
+    Idade: <input type="number" required placeholder="Selecione sua idade"> </br>
+    Digite seu e-mail <input type="email" name="usermail" required placeholder="Digite seu e-mail">
+    Senha: <input type="password" id="senha" name="senha" required placeholder="Digite sua senha"> </br> <br>
+    Seu gênero: <br>
+    <input type="radio" id="fem" name="sexo" value="F" /> Feminino <br/>
+    <input type="radio" id="masc" name="sexo" value="M" /> Masculino <br>
+    <input type="radio" id="outro" name="sexo" value="O" /> Outro <br> <br>
+    Digite a data de hoje: <input type="date"> <br> <br> 
+    Digite sua Região: <input list="regioes" id="regioes" name="regiao" placeholder="Selecione sua região" />
+    <datalist id="regioes">
+        <option value="Norte">
+        <option value="Nordeste">
+        <option value="Centro-oeste">
+        <option value="Sudeste">
+        <option value="Sul">
+        </datalist> <br> <br>
+    Seu projeto pessoal (opcional) <input type="file"> <br> <br>
+    <input type="submit" value="Enviar" /> 
+
+        <p>Caso tenha alguma dúvida ou sugestoes para melhorar o desempenho da nossa página:</p>
+        <form>
+            <textarea id="coment" rows="8" cols="70"> </textarea> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Todos os direitos reservados.
+    </footer>
+    
+</body>
+</html>
